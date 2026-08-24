@@ -1,0 +1,41 @@
+{
+  "name": "genpark-branded-resale-trade-in-valuation-circular-os-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Brand-owned circular resale operating system managing peer-to-peer trade-ins, brand credit vouchers, and digital product passports.",
+  "author": "genpark",
+  "category": "recommerce",
+  "tags": [
+    "branded-resale",
+    "circular-fashion",
+    "trade-in-valuation",
+    "digital-product-passport",
+    "archive-resale"
+  ],
+  "inputs": {
+    "brand_sku": {
+      "type": "string"
+    },
+    "garment_age_years": {
+      "type": "integer"
+    },
+    "original_msrp_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "trade_in_id": {
+      "type": "string"
+    },
+    "brand_gift_card_credit_usd": {
+      "type": "number"
+    },
+    "cash_payout_usd": {
+      "type": "number"
+    },
+    "circular_garment_passport_minted": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
